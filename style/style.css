@@ -206,19 +206,19 @@ body{
 }
 
 .categoria__img:nth-child(1) .categoria__img__img {
-    background-image: url(./img/scaloneta/copa-america-conmebol.webp);
+    background-image: url("/img/scaloneta/copa-america-conmebol.webp");
     background-position: center;
     background-size: cover;
 }
 
 .categoria__img:nth-child(2) .categoria__img__img {
-    background-image: url(./img/scaloneta/finalissima.webp);
+    background-image: url("/img/scaloneta/finalissima.webp");
     background-position: center;
     background-size: cover;
 }
 
 .categoria__img:nth-child(3) .categoria__img__img {
-    background-image: url(./img/scaloneta/qatar-2022.jpg);
+    background-image: url("/img/scaloneta/qatar-2022.jpg");
     background-position: center;
     background-size: cover;
 
