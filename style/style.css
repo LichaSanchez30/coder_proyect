@@ -927,12 +927,17 @@ margin: 0;
         width: 280px;
         height: 280px;
     }
+    .categoria__img__img img{
+        width: 280px;
+        height: 280px;
+    }
 
     .contenedor__categoria {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
         width: 90vw;
+        
     }
 
     .categoria__img h4 {
