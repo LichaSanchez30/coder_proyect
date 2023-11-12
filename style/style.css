@@ -16,6 +16,20 @@
     height: 40px;
     font-family: "Raleway", sans-serif; }
 
+.contenedor_card, main .cards-plantel .contenedor_card {
+  width: 70%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid whitesmoke; }
+  .contenedor_card .card_miEstilo, main .cards-plantel .contenedor_card .card_miEstilo {
+    margin-bottom: 20px; }
+  .contenedor_card .card_miEstilo img {
+    height: 500px; }
+
 .header {
   border-bottom: solid 1px;
   display: flex;
@@ -69,6 +83,20 @@
     border-bottom: 1px solid;
     height: 40px;
     font-family: "Raleway", sans-serif; }
+
+.contenedor_card, main .cards-plantel .contenedor_card {
+  width: 70%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid whitesmoke; }
+  .contenedor_card .card_miEstilo, main .cards-plantel .contenedor_card .card_miEstilo {
+    margin-bottom: 20px; }
+  .contenedor_card .card_miEstilo img {
+    height: 500px; }
 
 main .section__promocion img {
   width: 100%; }
@@ -229,7 +257,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 250px;
-  background-color: #023e8a;
+  background-color: black;
   color: whitesmoke; }
   footer h3 {
     font-family: "Bebas Neue", sans-serif;
@@ -299,6 +327,20 @@ footer {
     border-bottom: 1px solid;
     height: 40px;
     font-family: "Raleway", sans-serif; }
+
+.contenedor_card, main .cards-plantel .contenedor_card {
+  width: 70%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid whitesmoke; }
+  .contenedor_card .card_miEstilo, main .cards-plantel .contenedor_card .card_miEstilo {
+    margin-bottom: 20px; }
+  .contenedor_card .card_miEstilo img {
+    height: 500px; }
 
 main .portada__fixture {
   margin: 10px 0; }
@@ -372,7 +414,7 @@ main .posiciones_gral {
       main .posiciones_gral table tr .empatado {
         color: gray;
         font-weight: bold; }
-      main .posiciones_gral table tr:hover {
+      main .posiciones_gral table tr:hover td {
         background-color: #023e8a;
         color: whitesmoke; }
 
@@ -392,6 +434,75 @@ main .posiciones_gral {
     border-bottom: 1px solid;
     height: 40px;
     font-family: "Raleway", sans-serif; }
+
+.contenedor_card, main .cards-plantel .contenedor_card {
+  width: 70%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid whitesmoke; }
+  .contenedor_card .card_miEstilo, main .cards-plantel .contenedor_card .card_miEstilo {
+    margin-bottom: 20px; }
+  .contenedor_card .card_miEstilo img {
+    height: 500px; }
+
+main .cards-plantel {
+  background-color: #023e8a; }
+  main .cards-plantel h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: whitesmoke;
+    padding: 40px; }
+  main .cards-plantel h2 {
+    margin-left: 40px;
+    color: whitesmoke;
+    font-family: "Raleway", sans-serif; }
+  main .cards-plantel .contenedor_card .card-body_miestilo {
+    padding: 5px; }
+    main .cards-plantel .contenedor_card .card-body_miestilo .mi_tilte {
+      font-family: "Bebas Neue", sans-serif;
+      letter-spacing: 1.5px;
+      margin: 0; }
+    main .cards-plantel .contenedor_card .card-body_miestilo p {
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      margin: 0; }
+      main .cards-plantel .contenedor_card .card-body_miestilo p span {
+        font-weight: bold; }
+
+.formacion, main .formacion_equipos .formacion_gral .formacion__argentina, main .formacion_equipos .formacion_gral .formacion__uruguay {
+  display: flex;
+  justify-content: space-around;
+  width: 50%; }
+
+.tabla, main .formacion_equipos .formacion_gral .formacion__argentina table, main .formacion_equipos .formacion_gral .formacion__uruguay table {
+  width: 600px;
+  text-align: center; }
+  .tabla thead tr, main .formacion_equipos .formacion_gral .formacion__argentina table thead tr, main .formacion_equipos .formacion_gral .formacion__uruguay table thead tr {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2.5px; }
+  .tabla tr, main .formacion_equipos .formacion_gral .formacion__argentina table tr, main .formacion_equipos .formacion_gral .formacion__uruguay table tr {
+    border-bottom: 1px solid;
+    height: 40px;
+    font-family: "Raleway", sans-serif; }
+
+.contenedor_card, main .cards-plantel .contenedor_card {
+  width: 70%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid whitesmoke; }
+  .contenedor_card .card_miEstilo, main .cards-plantel .contenedor_card .card_miEstilo {
+    margin-bottom: 20px; }
+  .contenedor_card .card_miEstilo img {
+    height: 500px; }
 
 * {
   margin: 0;
