@@ -1,0 +1,48 @@
+@import "var";
+.header{
+    border-bottom: solid 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: whitesmoke;
+    font-family: $texto_principal;
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+    .header__logo img{
+        width:90px;
+    }
+    .header__navegacion{
+        .main{
+            display: none;
+        }
+        .none{
+            display: none;
+        }
+        .header__navegacion__ul{
+            display: flex;
+            justify-content:space-between;
+            list-style: none;
+            margin-top: 15px;
+            padding: 0px;
+            a{
+                text-decoration: none;
+                padding: 5px 10px;
+                margin: 0 40px;
+                color: black;
+                letter-spacing: 1.5px;
+                border-radius: 6px;
+                font-size: 18px;
+                &:hover{
+                    background-color: $fondo;
+                    color: whitesmoke;
+                    border-radius: 6px;
+                    transition: background-color 1s;
+                }
+            }
+
+        }
+
+    }
+}

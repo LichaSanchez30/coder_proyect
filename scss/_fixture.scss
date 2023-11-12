@@ -1,0 +1,111 @@
+@import "var";
+
+main{
+    .portada__fixture{
+        margin: 10px 0;
+        .portada__fixture__img img{
+            width: 100%;
+        }
+    }
+    .formacion_equipos{
+        .formacion_gral{
+            display: flex;
+            justify-content: center;
+            .formacion__argentina{
+                @extend .formacion;
+                border-right: 2px solid;
+                table{
+                    @extend .tabla;
+                }
+            }
+            .escudo{
+                margin: auto 20px;
+                img{
+                    width:200px;
+                }
+            }
+            .formacion__uruguay{
+                @extend .formacion;
+                table{
+                    @extend .tabla;
+                }
+            }
+        
+        }
+    }
+    .proximos_partidos{
+        margin: 30px 0 0 0;
+        padding-bottom: 20px;
+        background-color:$fondo;
+        color: whitesmoke;
+        h2{
+            text-align: center;
+            padding: 40px 0;
+            font-family: $texto_principal;
+            letter-spacing: 5px;
+
+        }
+        table{
+            width: 50%;
+            margin: 0 auto;
+            background-color: whitesmoke;
+            color: black;
+            border-radius: 5px;
+            thead tr{
+                box-shadow: 0 0 10px gray;
+                font-family: $texto_principal;
+                font-size: 20px;
+                letter-spacing: 1.5px;
+            }
+            tr{
+                border-bottom: 1px solid;
+                text-align: center;
+                height: 50px;
+                font-family: $texto_secundario;
+            }
+        }
+    }
+    .posiciones_gral{
+        margin: 30px 0;
+        h2{
+            font-family: $texto_principal;
+            text-align: center;
+            letter-spacing: 5px;
+            padding: 30px;
+        }
+        table{
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+            thead tr{
+                font-family:$texto_principal;
+                letter-spacing: 3px;
+                box-shadow: 0 0 5px gray;
+                th{
+                    padding: 10px;
+                }
+            }
+            tr{
+                border-bottom: 1px solid rgba(#000, 0.2);
+                height: 35px;
+                font-family: $texto_secundario;
+                .ganado{
+                    color: green;
+                    font-weight: bold;
+                }
+                .perdido{
+                    color: red;
+                    font-weight: bold;
+                }
+                .empatado{
+                    color: gray;
+                    font-weight: bold;
+                }
+                &:hover{
+                    background-color: $fondo;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}

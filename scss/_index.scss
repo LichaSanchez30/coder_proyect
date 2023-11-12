@@ -1,0 +1,284 @@
+@import "var";
+
+main {
+    .section__promocion img {
+        width: 100%;
+    }
+
+    .galeria-responsive {
+        display: none;
+    }
+
+    .section__noticias {
+        h1 {
+            font-family: $texto_secundario;
+            letter-spacing: 3.5px;
+            text-align: center;
+            font-size: 25px;
+            background-color: $fondo;
+            color: whitesmoke;
+            line-height: 150px;
+            font-weight: 200;
+
+            .importante {
+                font-family: $texto_principal;
+                font-size: 50px;
+            }
+        }
+
+        h2 {
+            font-family: $texto_principal;
+            text-align: center;
+            margin-top: 50px;
+            color: black;
+            text-decoration: underline;
+            font-size: 45px;
+            letter-spacing: 2.5px
+        }
+
+        .section__div__noticias {
+            margin: 0 auto;
+
+            .noticia {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                margin: 0 auto;
+                width: 1500px;
+                border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+
+                .messi img {
+                    width: 350px;
+                }
+
+                .img_responsive {
+                    display: none;
+                }
+
+                .noticia__text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 20px;
+                    height: max-content;
+
+                    h3 {
+                        font-family: $texto_principal;
+                    }
+
+                    p {
+                        column-count: 2;
+                        font-family: $texto_secundario;
+                    }
+
+                    input {
+                        display: flex;
+                        width: 100px;
+                        height: 30px;
+                        font-size: 12px;
+                        justify-content: center;
+                        letter-spacing: 1.5px;
+                        font-family: $texto_secundario;
+                        border: none;
+                        margin-top: 50px;
+                        border-radius: 5px;
+                        background-color: black;
+                        color: whitesmoke;
+
+                        &:hover {
+                            background-color: whitesmoke;
+                            color: black;
+                            border: 1px solid;
+                            transition: background-color 0.5s;
+                        }
+                    }
+                }
+            }
+
+            .dibu_martinez {
+                background-color: $fondo;
+
+                .noticia__text {
+                    color: whitesmoke;
+
+                    input {
+                        background-color: whitesmoke;
+                        color: black;
+
+                        &:hover {
+                            border: 1px solid whitesmoke;
+                            color: whitesmoke;
+                            background-color: $fondo;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .proximos_encuentro img {
+        width: 100%;
+        height: 750px;
+    }
+
+    .section__categoria {
+        margin-top: 50px;
+
+        h3 {
+            font-family: $texto_principal;
+            margin: 40px;
+            font-size: 30px;
+            letter-spacing: 3.5px;
+            color: black;
+        }
+
+        .contenedor__categoria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            justify-content: space-between;
+            width: 70vw;
+            margin: 0 auto;
+
+            .categoria__img {
+                height: 480px;
+                .categoria__img__img {
+                    margin-bottom: 10px;
+
+                    img {
+                        width: 440px;
+                        height: 400px;
+
+                        &:hover {
+                            transform: scale(1.05, 1.05);
+                            margin-bottom: 10px;
+                            transition: all 0.5s;
+
+                        }
+                    }
+                    
+                }
+                h4{
+                        font-family: $texto_principal;
+                        letter-spacing: 5px;
+                        font-size: 25px;
+                        margin: 10px 15px;
+                        color: black;
+                    }
+            }
+
+        }
+    }
+    .formulario{
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        margin: 45px;
+        height: 150px;
+        p{
+            font-family: $texto_secundario;
+            font-size: 32px;
+            margin: 15px;
+            text-align: center;
+        }
+        .formulario__form{
+            text-align: center;
+            margin: 0 auto;
+            .formulario__form__email{
+                width: 450px;
+                height: 35px;
+                padding-left: 20px;
+                margin-right: 15px;
+                outline: none;
+                border-radius: 5px;
+            }
+            .formulario__form__suscripcion{
+                width: 150px;
+                height: 35px;
+                border: none;
+                background-color: black;
+                font-family: $texto_secundario;
+                color: whitesmoke;
+                border-radius: 5px;
+                padding: 5px;
+                &:hover{
+                    background-color: $fondo;
+                    border: 1px solid;
+                }
+            }
+        }
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color:  $fondo;
+    color: whitesmoke;
+    h3{
+        font-family:$texto_principal;
+        letter-spacing: 3.5px;
+        font-size: 14px;
+        text-align: center;
+    }
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    .footer__links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        a{
+            width: max-content;
+            font-family:$texto_secundario;
+            margin: 5px;
+            border-bottom: 1px solid transparent;
+            font-size: 10px;
+            &:hover{
+                border-bottom: 1px solid whitesmoke;
+            }
+        }
+    }
+    .footer__redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:400px;
+        p{
+            font-family: $texto_secundario;
+            padding: 5px 20px;
+            font-size: 12px;
+        }
+        .redes a{
+            font-size: 18px;
+            margin-right: 10px;
+            &:hover{
+                color: black
+            }
+        }
+    }
+    .footer__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 550px;
+        font-size: 12px;
+        font-family: $texto_secundario;
+        h3{
+            text-align: left;
+            padding-left: 70px;
+        }
+        .info-contacto{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
