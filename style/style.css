@@ -30,6 +30,12 @@
   .contenedor_card .card_miEstilo img {
     height: 500px; }
 
+.contenedor_form, main .form_contacto form, main .form_contacto form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .header {
   border-bottom: solid 1px;
   display: flex;
@@ -97,6 +103,12 @@
     margin-bottom: 20px; }
   .contenedor_card .card_miEstilo img {
     height: 500px; }
+
+.contenedor_form, main .form_contacto form, main .form_contacto form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 main .section__promocion img {
   width: 100%; }
@@ -342,6 +354,12 @@ footer {
   .contenedor_card .card_miEstilo img {
     height: 500px; }
 
+.contenedor_form, main .form_contacto form, main .form_contacto form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 main .portada__fixture {
   margin: 10px 0; }
   main .portada__fixture .portada__fixture__img img {
@@ -449,6 +467,12 @@ main .posiciones_gral {
   .contenedor_card .card_miEstilo img {
     height: 500px; }
 
+.contenedor_form, main .form_contacto form, main .form_contacto form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 main .cards-plantel {
   background-color: #023e8a; }
   main .cards-plantel h1 {
@@ -503,6 +527,140 @@ main .cards-plantel {
     margin-bottom: 20px; }
   .contenedor_card .card_miEstilo img {
     height: 500px; }
+
+.contenedor_form, main .form_contacto form, main .form_contacto form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+main .form_contacto h1 {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  letter-spacing: 2.5px;
+  margin-top: 50px; }
+
+main .form_contacto p {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  text-align: center; }
+
+main .form_contacto form {
+  margin: 40px 0; }
+  main .form_contacto form div label {
+    width: 400px;
+    font-family: "Raleway", sans-serif; }
+  main .form_contacto form div input {
+    border: none;
+    border-bottom: 1px solid;
+    margin: 10px 0 40px 0;
+    width: 400px;
+    font-family: "Raleway", sans-serif;
+    outline: none;
+    padding-left: 5px; }
+  main .form_contacto form textarea {
+    padding-left: 5px; }
+  main .form_contacto form .btn {
+    width: 150px;
+    border: none;
+    background-color: #023e8a;
+    color: whitesmoke;
+    margin-top: 30px; }
+    main .form_contacto form .btn:hover {
+      opacity: 0.7;
+      transition: opacity 0.5s; }
+
+.formacion, main .formacion_equipos .formacion_gral .formacion__argentina, main .formacion_equipos .formacion_gral .formacion__uruguay {
+  display: flex;
+  justify-content: space-around;
+  width: 50%; }
+
+.tabla, main .formacion_equipos .formacion_gral .formacion__argentina table, main .formacion_equipos .formacion_gral .formacion__uruguay table {
+  width: 600px;
+  text-align: center; }
+  .tabla thead tr, main .formacion_equipos .formacion_gral .formacion__argentina table thead tr, main .formacion_equipos .formacion_gral .formacion__uruguay table thead tr {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2.5px; }
+  .tabla tr, main .formacion_equipos .formacion_gral .formacion__argentina table tr, main .formacion_equipos .formacion_gral .formacion__uruguay table tr {
+    border-bottom: 1px solid;
+    height: 40px;
+    font-family: "Raleway", sans-serif; }
+
+.contenedor_card, main .cards-plantel .contenedor_card {
+  width: 70%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid whitesmoke; }
+  .contenedor_card .card_miEstilo, main .cards-plantel .contenedor_card .card_miEstilo {
+    margin-bottom: 20px; }
+  .contenedor_card .card_miEstilo img {
+    height: 500px; }
+
+.contenedor_form, main .form_contacto form, main .form_contacto form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros {
+  margin: 40px 0; }
+  main .nosotros h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px; }
+  main .nosotros .contenedor-texto {
+    font-family: "Raleway", sans-serif;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify; }
+  main .nosotros .scaloneta {
+    text-align: center; }
+
+.formacion, main .formacion_equipos .formacion_gral .formacion__argentina, main .formacion_equipos .formacion_gral .formacion__uruguay {
+  display: flex;
+  justify-content: space-around;
+  width: 50%; }
+
+.tabla, main .formacion_equipos .formacion_gral .formacion__argentina table, main .formacion_equipos .formacion_gral .formacion__uruguay table {
+  width: 600px;
+  text-align: center; }
+  .tabla thead tr, main .formacion_equipos .formacion_gral .formacion__argentina table thead tr, main .formacion_equipos .formacion_gral .formacion__uruguay table thead tr {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2.5px; }
+  .tabla tr, main .formacion_equipos .formacion_gral .formacion__argentina table tr, main .formacion_equipos .formacion_gral .formacion__uruguay table tr {
+    border-bottom: 1px solid;
+    height: 40px;
+    font-family: "Raleway", sans-serif; }
+
+.contenedor_card, main .cards-plantel .contenedor_card {
+  width: 70%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid whitesmoke; }
+  .contenedor_card .card_miEstilo, main .cards-plantel .contenedor_card .card_miEstilo {
+    margin-bottom: 20px; }
+  .contenedor_card .card_miEstilo img {
+    height: 500px; }
+
+.contenedor_form, main .form_contacto form, main .form_contacto form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 * {
   margin: 0;
