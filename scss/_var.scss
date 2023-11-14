@@ -1,12 +1,15 @@
 $texto_principal: 'Bebas Neue', sans-serif;
 $texto_secundario: 'Raleway', sans-serif;
 $fondo: #023e8a;
+$doce: 12px;
+$quince: 15px;
+$dez:10px;
 
 .formacion {
     display: flex;
     justify-content: space-around;
-    width: 50%;
 }
+
 
 .tabla {
     width: 600px;
@@ -14,14 +17,12 @@ $fondo: #023e8a;
 
     thead tr {
         font-family: $texto_principal;
-        font-size: 20px;
         letter-spacing: 2.5px;
     }
 
     tr {
 
         border-bottom: 1px solid;
-        height: 40px;
         font-family: $texto_secundario;
     }
 }
@@ -51,3 +52,4 @@ $fondo: #023e8a;
     justify-content: center;
     align-items: center;
 }
+

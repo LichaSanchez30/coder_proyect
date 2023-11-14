@@ -1,63 +1,85 @@
 @import "var";
 
-main{
-    .portada__fixture{
+main {
+    .portada__fixture {
         margin: 10px 0;
-        .portada__fixture__img img{
+
+        .portada__fixture__img img {
             width: 100%;
         }
     }
-    .formacion_equipos{
-        .formacion_gral{
+
+    .formacion_equipos {
+        .formacion_gral {
             display: flex;
             justify-content: center;
-            .formacion__argentina{
+
+            .formacion__argentina {
                 @extend .formacion;
+                width: 50%;
                 border-right: 2px solid;
-                table{
+
+                table {
                     @extend .tabla;
+
+                    tr {
+                        height: 40px;
+                    }
                 }
             }
-            .escudo{
+
+            .escudo {
                 margin: auto 20px;
-                img{
-                    width:200px;
+
+                img {
+                    width: 200px;
                 }
             }
-            .formacion__uruguay{
+
+            .formacion__uruguay {
                 @extend .formacion;
-                table{
+
+                table {
                     @extend .tabla;
+
+                    tr {
+                        height: 40px;
+                    }
                 }
             }
-        
+
         }
     }
-    .proximos_partidos{
+
+    .proximos_partidos {
         margin: 30px 0 0 0;
         padding-bottom: 20px;
-        background-color:$fondo;
+        background-color: $fondo;
         color: whitesmoke;
-        h2{
+
+        h2 {
             text-align: center;
             padding: 40px 0;
             font-family: $texto_principal;
             letter-spacing: 5px;
 
         }
-        table{
+
+        table {
             width: 50%;
             margin: 0 auto;
             background-color: whitesmoke;
             color: black;
             border-radius: 5px;
-            thead tr{
+
+            thead tr {
                 box-shadow: 0 0 10px gray;
                 font-family: $texto_principal;
                 font-size: 20px;
                 letter-spacing: 1.5px;
             }
-            tr{
+
+            tr {
                 border-bottom: 1px solid;
                 text-align: center;
                 height: 50px;
@@ -65,47 +87,173 @@ main{
             }
         }
     }
-    .posiciones_gral{
+
+    .posiciones_gral {
         margin: 30px 0;
-        h2{
+
+        h2 {
             font-family: $texto_principal;
             text-align: center;
             letter-spacing: 5px;
             padding: 30px;
         }
-        table{
+
+        table {
             width: 30%;
             margin: 0 auto;
             text-align: center;
-            thead tr{
-                font-family:$texto_principal;
+
+            thead tr {
+                font-family: $texto_principal;
                 letter-spacing: 3px;
                 box-shadow: 0 0 5px gray;
-                th{
+
+                th {
                     padding: 10px;
                 }
             }
-            tr{
+
+            tr {
                 border-bottom: 1px solid rgba(#000, 0.2);
                 height: 35px;
                 font-family: $texto_secundario;
-                .ganado{
+
+                .ganado {
                     color: green;
                     font-weight: bold;
                 }
-                .perdido{
+
+                .perdido {
                     color: red;
                     font-weight: bold;
                 }
-                .empatado{
+
+                .empatado {
                     color: gray;
                     font-weight: bold;
                 }
-                &:hover td{
+
+                &:hover td {
                     background-color: $fondo;
                     color: whitesmoke;
                 }
             }
         }
     }
+}
+
+@media screen and (max-width: 1280px) {
+    main {
+        .formacion_equipos {
+            .formacion_gral {
+                display: block;
+                justify-content: center;
+
+                .formacion__argentina {
+                    display: block;
+                    width: 100%;
+                    border-right: none;
+                    margin-bottom: 50px;
+                    padding: 50px;
+                    border-bottom: 1px solid black;
+                    background-color: $fondo;
+                    color: whitesmoke;
+                }
+
+                .escudo img {
+                    width: 250px;
+                }
+
+                .formacion__uruguay {
+                    padding: 25px 50px;
+
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    main {
+        .formacion_equipos {
+
+            .formacion_gral {
+                .tabla {
+                    width: 600px;
+                    text-align: center;
+
+                    thead tr {
+                        font-size: 15px;
+                    }
+
+                    tr {
+
+                        border-bottom: 1px solid;
+                        height: 30px;
+                        font-size: 12px;
+                        font-family: $texto_secundario;
+                    }
+                }
+
+                .escudo {
+                    img {
+                        width: 150px;
+                    }
+                }
+
+            }
+
+        }
+        .proximos_partidos{
+            table {
+                width: 70%;
+    
+                thead tr {
+                    font-size: 15px;
+                }
+    
+                tr {
+                    height: 30px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .posiciones_gral {    
+            table {
+                width: 45%;
+    
+                thead tr {
+                    font-size: 14px;
+                }
+    
+                tr {
+                    height: 25px;
+                    font-size: 12px;
+    
+                    .ganado {
+                        color: green;
+                        font-weight: bold;
+                    }
+    
+                    .perdido {
+                        color: red;
+                        font-weight: bold;
+                    }
+    
+                    .empatado {
+                        color: gray;
+                        font-weight: bold;
+                    }
+    
+                    &:hover td {
+                        background-color: $fondo;
+                        color: whitesmoke;
+                    }
+                }
+            }
+        }
+    }
+
+
 }
