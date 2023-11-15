@@ -370,7 +370,7 @@ footer {
     main .section__noticias .section__div__noticias .noticia .noticia__text .parrafo {
       column-count: 2;
       font-size: 12px; }
-      main .section__noticias .section__div__noticias .noticia .noticia__text .parrafo span {
+      main .section__noticias .section__div__noticias .noticia .noticia__text .parrafo .ocultar {
         display: none; }
     main .section__noticias .section__div__noticias .noticia .noticia__text input {
       margin-top: 5px; }
@@ -532,6 +532,55 @@ footer {
   footer .footer__info .info-contacto .map iframe {
     width: 200px; } }
 
+@media screen and (max-width: 480px) {
+  main .galeria-responsive {
+    display: block; }
+    main .galeria-responsive img {
+      width: 100%;
+      height: 250px; }
+  main .section__noticias h1 {
+    font-size: 14px;
+    line-height: 35px;
+    padding: 10px;
+    text-align: center; }
+    main .section__noticias h1 .importante {
+      font-size: 18px; }
+  main .section__noticias .section__div__noticias .noticia .noticia__text h3 {
+    font-size: 18px;
+    letter-spacing: 1px; }
+  main .section__noticias .section__div__noticias .noticia .noticia__text .parrafo {
+    width: 90%; }
+  main .section__noticias .section__div__noticias .dibu_martinez .noticia .noticia__text h3 {
+    width: 90%; }
+  main .proximos_encuentro img {
+    width: 100%;
+    height: 250px; }
+  main .section__categoria h3 {
+    font-size: 25px; }
+  main .section__categoria .contenedor__categoria {
+    grid-template-columns: repeat(1, 70vw);
+    justify-content: center; }
+    main .section__categoria .contenedor__categoria .categoria__img {
+      justify-self: center;
+      height: max-content; }
+      main .section__categoria .contenedor__categoria .categoria__img h4 {
+        font-size: 20px; }
+      main .section__categoria .contenedor__categoria .categoria__img .categoria__img__img {
+        margin-bottom: 10px; }
+        main .section__categoria .contenedor__categoria .categoria__img .categoria__img__img img {
+          width: 100%;
+          height: 200px; }
+  main .formulario {
+    height: 100px; }
+    main .formulario p {
+      font-size: 13px; }
+  footer h3 {
+    font-size: 15px; }
+  footer .footer__redes p {
+    font-size: 12px; }
+  footer .footer__info .info-contacto .map iframe {
+    width: 200px; } }
+
 .tabla, main .formacion_equipos .formacion_gral .formacion__argentina table, main .formacion_equipos .formacion_gral .formacion__uruguay table {
   width: 600px;
   text-align: center; }
@@ -568,7 +617,8 @@ main .formacion_equipos .formacion_gral {
     width: 50%;
     border-right: 2px solid; }
     main .formacion_equipos .formacion_gral .formacion__argentina table tr {
-      height: 40px; }
+      height: 40px;
+      border-bottom: 1px solid whitesmoke; }
   main .formacion_equipos .formacion_gral .escudo {
     margin: auto 20px; }
     main .formacion_equipos .formacion_gral .escudo img {
@@ -649,7 +699,6 @@ main .posiciones_gral {
       border-right: none;
       margin-bottom: 50px;
       padding: 50px;
-      border-bottom: 1px solid black;
       background-color: #023e8a;
       color: whitesmoke; }
     main .formacion_equipos .formacion_gral .escudo img {
@@ -702,30 +751,28 @@ main .posiciones_gral {
     width: 500px; } }
 
 @media screen and (max-width: 600px) {
+  main .formacion_equipos .formacion_gral .tabla_formacion .tabla, main .formacion_equipos .formacion_gral .tabla_formacion .formacion__argentina table, main .formacion_equipos .formacion_gral .formacion__argentina .tabla_formacion table, main .formacion_equipos .formacion_gral .tabla_formacion .formacion__uruguay table, main .formacion_equipos .formacion_gral .formacion__uruguay .tabla_formacion table {
+    width: 100%;
+    justify-content: stretch; }
   main .formacion_equipos .formacion_gral .formacion__argentina {
     display: block;
     justify-content: space-around;
     align-items: center; }
   main .formacion_equipos .formacion_gral .formacion__uruguay {
     display: block;
-    padding: 0 10px; }
-  main .formacion_equipos .formacion_gral .tabla, main .formacion_equipos .formacion_gral .formacion__argentina table, main .formacion_equipos .formacion_gral .formacion__uruguay table {
-    width: 600px;
+    justify-content: space-around;
+    align-items: center; }
+  main .formacion_equipos .escudo {
     text-align: center; }
-    main .formacion_equipos .formacion_gral .tabla thead tr, main .formacion_equipos .formacion_gral .formacion__argentina table thead tr, main .formacion_equipos .formacion_gral .formacion__uruguay table thead tr {
-      font-size: 15px; }
-    main .formacion_equipos .formacion_gral .tabla tr, main .formacion_equipos .formacion_gral .formacion__argentina table tr, main .formacion_equipos .formacion_gral .formacion__uruguay table tr {
-      border-bottom: 1px solid;
-      height: 30px;
-      font-size: 12px;
-      font-family: "Raleway", sans-serif; }
-  main .formacion_equipos .formacion_gral .escudo {
-    text-align: center; }
-    main .formacion_equipos .formacion_gral .escudo img {
+    main .formacion_equipos .escudo img {
       margin: 10px 30px;
       width: 150px; }
-  main .proximos_partidos table {
-    width: 90%; } }
+  main .proximos_partidos .partidos__argentina table {
+    width: 90%; }
+    main .proximos_partidos .partidos__argentina table .none-responsive {
+      display: none; }
+  main .posiciones_gral .tabla_posiciones .posiciones {
+    width: 75%; } }
 
 .tabla, main .formacion_equipos .formacion_gral .formacion__argentina table, main .formacion_equipos .formacion_gral .formacion__uruguay table {
   width: 600px;

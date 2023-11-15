@@ -25,6 +25,7 @@ main {
 
                     tr {
                         height: 40px;
+                        border-bottom: 1px solid whitesmoke;
                     }
                 }
             }
@@ -156,7 +157,6 @@ main {
                     border-right: none;
                     margin-bottom: 50px;
                     padding: 50px;
-                    border-bottom: 1px solid black;
                     background-color: $fondo;
                     color: whitesmoke;
                 }
@@ -278,50 +278,64 @@ main {
         .formacion_equipos {
 
             .formacion_gral {
+                .tabla_formacion {
+                    .tabla {
+                       width: 100%;
+                        justify-content: stretch;
+                        
+                    }
+
+                }
+
                 .formacion__argentina {
                     display: block;
                     justify-content: space-around;
                     align-items: center;
+
                 }
-                .formacion__uruguay{
+
+                .formacion__uruguay {
                     display: block;
-                    padding: 0 10px;
-                }
-                .tabla {
-                    width: 600px;
-                    text-align: center;
-
-                    thead tr {
-                        font-size: 15px;
-                    }
-
-                    tr {
-
-                        border-bottom: 1px solid;
-                        height: 30px;
-                        font-size: 12px;
-                        font-family: $texto_secundario;
-                    }
+                    justify-content: space-around;
+                    align-items: center;
+                    
                 }
 
-                .escudo {
-                    text-align: center;
+            }
 
-                    img {
-                        margin: 10px 30px ;
-                        width: 150px;
-                    }
+            .escudo {
+                text-align: center;
+
+                img {
+                    margin: 10px 30px;
+                    width: 150px;
                 }
-
             }
 
         }
 
         .proximos_partidos {
-            table {
-                width: 90%;
+            .partidos__argentina {
+                table {
+                    width: 90%;
+                    .none-responsive{
+                        display: none;
+                    }
+                }
             }
+
+        }
+        .posiciones_gral {
+            .tabla_posiciones{
+              .posiciones {
+                width: 75%;
+            }  
+            }
+            
         }
 
     }
+
+
+
 }

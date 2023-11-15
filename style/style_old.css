@@ -1140,3 +1140,12 @@ margin: 0;
         height: 290px;        
     }
 }
+
+
+576px;
+--bs-breakpoint-md: 768px;
+--bs-breakpoint-lg: 992px;
+--bs-breakpoint-xl: 1200px;
+--bs-breakpoint-xxl: 1400px;
+}
+

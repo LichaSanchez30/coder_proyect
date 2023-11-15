@@ -417,7 +417,7 @@ footer {
                             column-count: 2;
                             font-size: 12px;
 
-                            span {
+                            .ocultar {
                                 display: none;
                             }
                         }
@@ -621,11 +621,12 @@ footer {
                 justify-content: space-around;
                 align-items: center;
 
-                 h3 {
-                        text-align: center;
-                    }
-                .map{
-                    iframe{
+                h3 {
+                    text-align: center;
+                }
+
+                .map {
+                    iframe {
                         width: 300px;
                     }
                 }
@@ -636,8 +637,9 @@ footer {
     }
 
 }
-@media screen and (max-width: 600px){
-    main{
+
+@media screen and (max-width: 600px) {
+    main {
         .galeria-responsive {
             display: block;
 
@@ -645,6 +647,7 @@ footer {
                 height: 300px;
             }
         }
+
         .section__noticias {
             h1 {
                 font-size: 15px;
@@ -662,7 +665,7 @@ footer {
 
             .section__div__noticias {
 
-                .noticia {         
+                .noticia {
 
                     .img_responsive {
                         display: block;
@@ -692,13 +695,15 @@ footer {
                     }
                 }
 
-                
+
             }
         }
+
         .proximos_encuentro img {
             width: 100%;
             height: 300px;
         }
+
         .formulario {
             height: 90px;
 
@@ -725,10 +730,11 @@ footer {
             }
         }
     }
+
     footer {
 
         h3 {
-            
+
             font-size: $quince;
         }
 
@@ -742,8 +748,142 @@ footer {
 
         .footer__info {
             .info-contacto {
-                .map{
-                    iframe{
+                .map {
+                    iframe {
+                        width: 200px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        .galeria-responsive {
+            display: block;
+
+            img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+
+        .section__noticias {
+            h1 {
+                font-size: 14px;
+                line-height: 35px;
+                padding: 10px;
+                text-align: center;
+
+                .importante {
+                    font-size: 18px;
+                }
+            }
+
+            .section__div__noticias {
+
+                .noticia {
+                    .noticia__text {
+
+                        h3 {
+                            font-size: 18px;
+                            letter-spacing: 1px;
+                        }
+
+                        .parrafo {
+                            width: 90%;
+                        }
+
+                    }
+                }
+
+                .dibu_martinez {
+                    .noticia {
+                        .noticia__text {
+                            h3 {
+                                width: 90%;
+
+                            }
+                        }
+
+
+
+                    }
+
+                }
+
+
+
+            }
+        }
+
+        .proximos_encuentro img {
+            width: 100%;
+            height: 250px;
+        }
+
+        .section__categoria {
+            h3{
+                font-size: 25px;
+            }
+            .contenedor__categoria {
+                grid-template-columns: repeat(1, 70vw);
+                justify-content: center;
+
+                .categoria__img {
+                    justify-self: center;
+                    height: max-content;
+
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    .categoria__img__img {
+                        margin-bottom: 10px;
+
+
+                        img {
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .formulario {
+            height: 100px;
+
+            p {
+                font-size: 13px;
+            }
+
+        }
+    }
+
+    footer {
+
+        h3 {
+
+            font-size: $quince;
+        }
+
+        .footer__redes {
+
+            p {
+                font-size: 12px;
+            }
+
+        }
+
+        .footer__info {
+            .info-contacto {
+                .map {
+                    iframe {
                         width: 200px;
                     }
                 }
