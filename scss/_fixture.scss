@@ -15,7 +15,8 @@ main {
             justify-content: center;
 
             .formacion__argentina {
-                @extend .formacion;
+                display: flex;
+                justify-content: space-around;
                 width: 50%;
                 border-right: 2px solid;
 
@@ -37,7 +38,8 @@ main {
             }
 
             .formacion__uruguay {
-                @extend .formacion;
+                display: flex;
+                justify-content: space-around;
 
                 table {
                     @extend .tabla;
@@ -150,7 +152,6 @@ main {
                 justify-content: center;
 
                 .formacion__argentina {
-                    display: block;
                     width: 100%;
                     border-right: none;
                     margin-bottom: 50px;
@@ -174,7 +175,7 @@ main {
     }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:1024px) {
     main {
         .formacion_equipos {
 
@@ -205,47 +206,49 @@ main {
             }
 
         }
-        .proximos_partidos{
+
+        .proximos_partidos {
             table {
                 width: 70%;
-    
+
                 thead tr {
                     font-size: 15px;
                 }
-    
+
                 tr {
                     height: 30px;
                     font-size: 12px;
                 }
             }
         }
-        .posiciones_gral {    
+
+        .posiciones_gral {
             table {
                 width: 45%;
-    
+
                 thead tr {
                     font-size: 14px;
                 }
-    
+
                 tr {
                     height: 25px;
                     font-size: 12px;
-    
+
                     .ganado {
                         color: green;
                         font-weight: bold;
                     }
-    
+
                     .perdido {
                         color: red;
                         font-weight: bold;
                     }
-    
+
                     .empatado {
                         color: gray;
                         font-weight: bold;
                     }
-    
+
                     &:hover td {
                         background-color: $fondo;
                         color: whitesmoke;
@@ -254,6 +257,71 @@ main {
             }
         }
     }
+}
 
+@media screen and (max-width: 768px) {
+    main {
+        .formacion_gral {
+            .tabla_formacion {
+                .tabla {
+                    width: 500px;
+                }
 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+
+        .formacion_equipos {
+
+            .formacion_gral {
+                .formacion__argentina {
+                    display: block;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .formacion__uruguay{
+                    display: block;
+                    padding: 0 10px;
+                }
+                .tabla {
+                    width: 600px;
+                    text-align: center;
+
+                    thead tr {
+                        font-size: 15px;
+                    }
+
+                    tr {
+
+                        border-bottom: 1px solid;
+                        height: 30px;
+                        font-size: 12px;
+                        font-family: $texto_secundario;
+                    }
+                }
+
+                .escudo {
+                    text-align: center;
+
+                    img {
+                        margin: 10px 30px ;
+                        width: 150px;
+                    }
+                }
+
+            }
+
+        }
+
+        .proximos_partidos {
+            table {
+                width: 90%;
+            }
+        }
+
+    }
 }

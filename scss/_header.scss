@@ -46,3 +46,45 @@
 
     }
 }
+@media screen and (max-width: 770px){
+    .header{
+        height: 50px;
+        justify-content: space-between;
+        .header__logo img{
+            margin-left: 100px;
+            width: 49px
+        }
+        .header__navegacion{
+            .main{
+                display: block;
+                font-size: 30px;
+                padding: 3px;
+                margin-right: 100px;                
+            }
+            
+            .header__navegacion__ul{
+            position: absolute;
+            display: none;
+            left: 0;
+            top: 35px;
+            width: 100%;
+            li{
+                margin: 5px;
+                
+            }
+        }
+        .checkbox:checked + .header__navegacion__ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border: solid 1px;
+            background-color: whitesmoke;
+            animation-name: menu;
+        }
+
+        }
+        
+    }
+}
