@@ -549,6 +549,13 @@ footer {
     text-align: center; }
     main .section__noticias h1 .importante {
       font-size: 18px; }
+  main .section__noticias .section__div__noticias .noticia .img_responsive {
+    display: block;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 15px; }
+    main .section__noticias .section__div__noticias .noticia .img_responsive img {
+      width: 350px; }
   main .section__noticias .section__div__noticias .noticia .noticia__text h3 {
     font-size: 18px;
     letter-spacing: 1px; }

@@ -784,6 +784,16 @@ footer {
             .section__div__noticias {
 
                 .noticia {
+                    .img_responsive {
+                        display: block;
+                        width: 350px;
+                        margin-top: 20px;
+                        margin-bottom: 15px;
+
+                        img {
+                            width: 350px;
+                        }
+                    }
                     .noticia__text {
 
                         h3 {
