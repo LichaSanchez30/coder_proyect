@@ -62,51 +62,74 @@ main {
     main {
         .cards-plantel {
             h2 {
-                margin-left: 10px ;
+                margin-left: 10px;
                 font-size: 20px;
             }
+
             .contenedor_card {
                 grid-template-columns: repeat(3, 200px);
+
                 .card_miEstilo {
                     margin-bottom: 20px;
-    
-    
+
+
                     img {
                         height: 300px;
                     }
-    
-                    
+
+
                 }
-    
+
             }
         }
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     main {
         .cards-plantel {
             .contenedor_card {
                 grid-template-columns: repeat(2, 150px);
+
                 .card_miEstilo {
                     margin-bottom: 20px;
-                        .card-body_miestilo{
-                            .mi_tilte{
-                                font-size: $quince;
-                            }
-                            .mi_text{
-                                font-size: $doce;
-                            }
+
+                    .card-body_miestilo {
+                        .mi_tilte {
+                            font-size: $quince;
                         }
-    
-    
+
+                        .mi_text {
+                            font-size: $doce;
+                        }
+                    }
+
+
                     img {
                         height: 250px;
                     }
-    
-                    
+
+
                 }
-    
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main {
+        .cards-plantel {
+
+            h1 {
+                font-size: 20px;
+                padding: 15px;
+            }
+
+            .contenedor_card {
+                margin: 0;
+                grid-template-columns: repeat(1, 150px);
+
             }
         }
     }

@@ -52,3 +52,32 @@ main{
         }
     }
 }
+@media screen and (max-width: 320px){
+    main{
+        .form_contacto{
+            h1{
+                font-size: $veinte;
+            }
+            p{
+                font-size: $diez;
+            }
+            .form{
+                label{
+                    width: 200px;
+                    font-size: $doce;
+                }
+                input{
+                    width: 250px;
+                    font-size: $doce;
+                }
+                textarea{
+                    width: 250px;
+                }
+                .btn{
+                    width: 100px;
+                }
+            }
+
+        }
+    }
+}

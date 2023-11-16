@@ -339,3 +339,45 @@ main {
 
 
 }
+@media screen and (max-width: 320px){
+    main{
+        .formacion_equipos {
+
+            .formacion_gral {
+                .formacion__argentina{
+                    padding: 10px;
+                }
+                .tabla_formacion {
+
+                    .tabla {
+                       width: 100%;
+                        justify-content: stretch;
+                        
+                    }
+
+                }
+
+                .formacion__uruguay{
+                    padding: 10px;
+                }
+
+                
+
+            }
+
+            .escudo {
+                img {
+                    margin: 10px 0px;
+                }
+            }
+
+        }
+        .proximos_partidos{
+            .tabla_partidos{
+                .ultimo_responsive{
+                    display: none;
+                }
+            }
+        }
+    }
+}

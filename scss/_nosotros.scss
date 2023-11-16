@@ -19,3 +19,22 @@ main{
         }
     }
 }
+
+@media screen and (max-width: 320px){
+    main{
+        .nosotros{
+            h1{
+                font-size: $veinte;
+            }
+            .contenedor-texto{
+               font-size: $doce;
+               width: 80vw;
+            }
+            .scaloneta{
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
