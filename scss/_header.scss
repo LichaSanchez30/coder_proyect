@@ -81,7 +81,6 @@
 
                 li {
                     margin: 5px;
-
                 }
             }
 
@@ -93,6 +92,33 @@
                 padding: 20px;
                 background-color: whitesmoke;
                 animation-name: menu;
+                animation-iteration-count: initial;
+                animation-duration: 0.5s;
+                
+
+            }
+
+            @keyframes menu {
+                0% {
+                    width: 50%;
+                    margin-left: 100%;
+                }
+
+                50% {
+                    width: 70%;
+                    margin-left: 30%;
+                }
+
+                75% {
+                    width: 80%;
+                    margin-left:20%;
+                }
+
+                100% {
+                    width: 100%;
+                    margin-left: 0;
+
+                }
             }
 
         }
