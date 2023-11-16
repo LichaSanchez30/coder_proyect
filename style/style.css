@@ -590,6 +590,8 @@ footer {
 @media screen and (max-width: 320px) {
   main .galeria-responsive .mi_estilo_galeria img {
     height: 170px; }
+  main .section__noticias h1 {
+    display: none; }
   main .section__noticias .section__div__noticias .noticia .img_responsive {
     display: block;
     width: 280px;
