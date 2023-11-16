@@ -20,7 +20,18 @@ main{
         }
     }
 }
-
+@media screen and (max-width: 828px){
+    main{
+        .nosotros{
+            .scaloneta{
+                width: 95vw;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 320px){
     main{
         .nosotros{
@@ -32,6 +43,7 @@ main{
                width: 80vw;
             }
             .scaloneta{
+
                 img{
                     width: 200px;
                 }

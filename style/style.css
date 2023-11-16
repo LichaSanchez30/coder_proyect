@@ -1029,6 +1029,12 @@ main .nosotros {
     width: 100%;
     text-align: center; }
 
+@media screen and (max-width: 828px) {
+  main .nosotros .scaloneta {
+    width: 95vw; }
+    main .nosotros .scaloneta img {
+      width: 100%; } }
+
 @media screen and (max-width: 320px) {
   main .nosotros h1 {
     font-size: 20px; }
