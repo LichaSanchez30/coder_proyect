@@ -975,7 +975,7 @@ main .form_contacto form {
       opacity: 0.7;
       transition: opacity 0.5s; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   main .form_contacto h1 {
     font-size: 20px; }
   main .form_contacto p {
