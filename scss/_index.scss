@@ -73,24 +73,22 @@ main {
                         column-count: 2;
                         font-family: $texto_secundario;
 
-                        span {
-                            display: none;
-                        }
+                      
                     }
-
-                    input {
-                        display: flex;
+                    .btn-noticia{
+                        text-align: center;
                         width: 100px;
-                        height: 30px;
+                        line-height: 30px;
                         font-size: 12px;
                         justify-content: center;
                         letter-spacing: 1.5px;
                         font-family: $texto_secundario;
-                        border: none;
                         margin-top: 50px;
                         border-radius: 5px;
                         background-color: black;
                         color: whitesmoke;
+                        text-decoration: none;
+                        border: solid 1px transparent;
 
                         &:hover {
                             background-color: whitesmoke;
@@ -99,6 +97,7 @@ main {
                             transition: background-color 0.5s;
                         }
                     }
+
                 }
             }
 
@@ -108,16 +107,6 @@ main {
                 .noticia__text {
                     color: whitesmoke;
 
-                    input {
-                        background-color: whitesmoke;
-                        color: black;
-
-                        &:hover {
-                            border: 1px solid whitesmoke;
-                            color: whitesmoke;
-                            background-color: $fondo;
-                        }
-                    }
                 }
 
             }
@@ -336,7 +325,7 @@ footer {
                             }
                         }
 
-                        input {
+                        .btn-noticia {
                             margin-top: 10px;
 
                         }
@@ -422,7 +411,7 @@ footer {
                             }
                         }
 
-                        input {
+                        .btn-noticia {
                             margin-top: 5px;
                         }
                     }
@@ -501,7 +490,7 @@ footer {
 
                         }
 
-                        input {
+                        .btn-noticia {
                             margin-top: 5px;
                             margin-bottom: 10px;
 
@@ -685,7 +674,7 @@ footer {
                         }
 
 
-                        input {
+                        .btn-noticia {
                             width: max-content;
                             height: max-content;
                             padding: 5px;

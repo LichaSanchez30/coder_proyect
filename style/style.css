@@ -185,22 +185,21 @@ main .section__noticias .section__div__noticias {
       main .section__noticias .section__div__noticias .noticia .noticia__text p {
         column-count: 2;
         font-family: "Raleway", sans-serif; }
-        main .section__noticias .section__div__noticias .noticia .noticia__text p span {
-          display: none; }
-      main .section__noticias .section__div__noticias .noticia .noticia__text input {
-        display: flex;
+      main .section__noticias .section__div__noticias .noticia .noticia__text .btn-noticia {
+        text-align: center;
         width: 100px;
-        height: 30px;
+        line-height: 30px;
         font-size: 12px;
         justify-content: center;
         letter-spacing: 1.5px;
         font-family: "Raleway", sans-serif;
-        border: none;
         margin-top: 50px;
         border-radius: 5px;
         background-color: black;
-        color: whitesmoke; }
-        main .section__noticias .section__div__noticias .noticia .noticia__text input:hover {
+        color: whitesmoke;
+        text-decoration: none;
+        border: solid 1px transparent; }
+        main .section__noticias .section__div__noticias .noticia .noticia__text .btn-noticia:hover {
           background-color: whitesmoke;
           color: black;
           border: 1px solid;
@@ -209,13 +208,6 @@ main .section__noticias .section__div__noticias {
     background-color: #023e8a; }
     main .section__noticias .section__div__noticias .dibu_martinez .noticia__text {
       color: whitesmoke; }
-      main .section__noticias .section__div__noticias .dibu_martinez .noticia__text input {
-        background-color: whitesmoke;
-        color: black; }
-        main .section__noticias .section__div__noticias .dibu_martinez .noticia__text input:hover {
-          border: 1px solid whitesmoke;
-          color: whitesmoke;
-          background-color: #023e8a; }
 
 main .proximos_encuentro img {
   width: 100%; }
@@ -360,7 +352,7 @@ footer {
           font-size: 14px; }
           main .section__noticias .section__div__noticias .noticia .noticia__text .parrafo span {
             display: none; }
-        main .section__noticias .section__div__noticias .noticia .noticia__text input {
+        main .section__noticias .section__div__noticias .noticia .noticia__text .btn-noticia {
           margin-top: 10px; }
   main .proximos_encuentro img {
     width: 100%;
@@ -393,7 +385,7 @@ footer {
       font-size: 12px; }
       main .section__noticias .section__div__noticias .noticia .noticia__text .parrafo .ocultar {
         display: none; }
-    main .section__noticias .section__div__noticias .noticia .noticia__text input {
+    main .section__noticias .section__div__noticias .noticia .noticia__text .btn-noticia {
       margin-top: 5px; }
   main .proximos_encuentro img {
     width: 100%;
@@ -433,7 +425,7 @@ footer {
         main .section__noticias .section__div__noticias .noticia .noticia__text .parrafo {
           column-count: 1;
           width: 500px; }
-        main .section__noticias .section__div__noticias .noticia .noticia__text input {
+        main .section__noticias .section__div__noticias .noticia .noticia__text .btn-noticia {
           margin-top: 5px;
           margin-bottom: 10px; }
     main .section__noticias .section__div__noticias .dibu_martinez {
@@ -522,7 +514,7 @@ footer {
       width: 400px; }
   main .section__noticias .section__div__noticias .noticia .noticia__text h3 {
     font-size: 20px; }
-  main .section__noticias .section__div__noticias .noticia .noticia__text input {
+  main .section__noticias .section__div__noticias .noticia .noticia__text .btn-noticia {
     width: max-content;
     height: max-content;
     padding: 5px;
